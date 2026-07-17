@@ -81,11 +81,11 @@ export const updateProfile = async (req,res) => {
 
       updatedUser = await User.findByIdAndUpdate(userId,{profilePic: upload.secure_url, bio, fullName},{new: true});
     }
-    res.json({sucess:true,user:updatedUser})
+    res.json({success:true,user:updatedUser})
 
   }catch(error){
     console.log(error.message)
 
-    res.json({sucess:false,message: error.message})
+    res.json({success:false,message: error.message})
   }
 }
