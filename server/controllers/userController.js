@@ -62,7 +62,7 @@ export const login = async (req,res) => {
 
 // Controller to check if user is authenticated 
 export const checkAuth = (req,res) => {
-  res.json({sucess:true,user: req.user})
+  res.json({success:true,user: req.user})
 }
 
 // Controller to update user profile details
